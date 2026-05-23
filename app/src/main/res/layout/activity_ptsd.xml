@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PTSD Toolkit 🛡"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/playfair_bold"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Support • Calm • Control"
+            android:textColor="#E6FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- CALM BUTTON -->
+        <Button
+            android:id="@+id/panicBtn"
+            android:text="Calm Me Now 🧘"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"/>
+
+        <!-- REASSURANCE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reassureText"
+            android:text="Tap above to get calming guidance"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- PTSD INFO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dashboard_card_bg"
+            android:padding="18dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="About PTSD"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ptsdInfo"
+                android:text="PTSD is caused by trauma. Tap to learn more..."
+                android:textColor="#444444"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- SYMPTOMS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dashboard_card_bg"
+            android:padding="18dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Common Symptoms"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/symptomsText"
+                android:text="Tap to view symptoms"
+                android:textColor="#444444"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- GROUNDING -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dashboard_card_bg"
+            android:padding="18dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grounding Exercise 🌿"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/groundText"
+                android:text="Tap Start"
+                android:textColor="#555"
+                android:layout_marginTop="6dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/groundBtn"
+                android:text="Start Grounding"
+                android:background="@drawable/button_bg"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- 🔥 MOOD SECTION (FIXED ERROR) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dashboard_card_bg"
+            android:padding="18dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="How do you feel?"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/anxiousBtn"
+                    android:text="😰"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/calmBtn"
+                    android:text="😌"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/sadBtn"
+                    android:text="😢"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/moodResponse"
+                android:textColor="#555"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- QUICK TOOLS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dashboard_card_bg"
+            android:padding="18dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Quick Tools ⚡"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/breathBtn"
+                android:text="Breathing Exercise"
+                android:background="@drawable/button_bg"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/soundBtn"
+                android:text="Sound Mixer"
+                android:background="@drawable/button_bg"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

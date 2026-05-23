@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MindPeaceEX</string>
+
+    <string name="guided_meditation">Guided Meditation</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="calm_mode">Calm Mode</string>
+    <string name="sleep_mode">Sleep Mode</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+</resources>

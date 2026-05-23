@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <!-- HUD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreText"
+            android:layout_weight="1"
+            android:text="Score: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/comboText"
+            android:layout_weight="1"
+            android:text="Combo: 0"
+            android:gravity="center"
+            android:textColor="#FFD700"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timerText"
+            android:layout_weight="1"
+            android:text="Time: 30"
+            android:gravity="end"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- TARGET -->
+    <View
+        android:id="@+id/target"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_target"/>
+
+    <!-- PARTICLE TEXT -->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/particleText"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <!-- RESULT -->
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Over"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/finalScore"
+            android:text="Score: 0"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rewardText"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#FFD700"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/restartBtn"
+            android:text="Play Again"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutpage">
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/title"
+        android:text="Breathing"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#101010"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 🔥 TIMER (FIXED POSITION + HEIGHT) -->
+    <TextView
+        android:id="@+id/sessionTimer"
+        android:text="00:00"
+        android:textSize="18sp"
+        android:textColor="#101010"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- PROGRESS RING -->
+    <ProgressBar
+        android:id="@+id/progressRing"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progress_ring"
+        android:max="100"/>
+
+    <!-- CIRCLE -->
+    <View
+        android:id="@+id/breathCircle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/breath_circle"/>
+
+    <!-- BREATH TEXT -->
+    <TextView
+        android:id="@+id/breathText"
+        android:text="Ready"
+        android:textSize="28sp"
+        android:textColor="#101010"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/progressRing"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- START -->
+    <Button
+        android:id="@+id/startBtn"
+        android:text="Start"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breathText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <!-- STOP -->
+    <Button
+        android:id="@+id/stopBtn"
+        android:text="Stop"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>

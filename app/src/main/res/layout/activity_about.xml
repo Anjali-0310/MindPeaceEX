@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🌿 BACKGROUND IMAGE -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/aboutpage"
+        android:scaleType="centerCrop"/>
+
+    <!-- 🌿 DARK OVERLAY -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#25000000"/>
+
+    <!-- 🌿 BACK BUTTON -->
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/arrow_bg"
+        android:src="@drawable/arrow_back"
+        app:tint="@android:color/white"
+        android:elevation="12dp"
+        android:contentDescription="Back"/>
+
+
+    <!-- 🌿 GLASS CARD CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#33FFFFFF"
+        android:elevation="12dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About MindPeace"
+            android:textColor="#F5FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.06"
+            android:fontFamily="@font/playfair_bold"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MindPeace is a mental wellness application designed to reduce stress and improve emotional balance. It provides calming sounds, guided meditation, mood tracking, and PTSD support tools to help users relax and maintain mental well-being."
+            android:textColor="#F5FFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="6dp"/>
+
+        <!-- SPACE -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <!-- 🌿 SIGN UP BUTTON -->
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/button_bg"
+            android:elevation="6dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

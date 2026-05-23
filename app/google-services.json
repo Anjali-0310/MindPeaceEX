@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "433246028610",
+    "project_id": "my-mind-peace",
+    "storage_bucket": "my-mind-peace.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433246028610:android:1f5011efabc04b9192fedb",
+        "android_client_info": {
+          "package_name": "com.example.mindpeaceex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3lHLR3Gz_0_oZFsxB-hkW64IxYSAoZFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

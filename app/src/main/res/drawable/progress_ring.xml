@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="10dp" android:color="#F99F"/>
+        </shape>
+    </item>
+
+    <item>
+        <rotate android:fromDegrees="270" android:toDegrees="270">
+            <shape android:shape="ring"
+                android:thickness="10dp"
+                android:useLevel="true">
+                <gradient android:startColor="#F99F"
+                    android:endColor="#FF5C8A"
+                    android:type="sweep"/>
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

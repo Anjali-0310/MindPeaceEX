@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🌿 BACKGROUND -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/aboutpage"
+        android:scaleType="centerCrop"/>
+
+    <!-- 🌿 LIGHT OVERLAY -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#22000000"/>
+
+    <!-- 🌿 MAIN CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:text="Gratitude Journal 💛"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/playfair_bold"
+            android:letterSpacing="0.05"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- TEMPLATE -->
+        <Spinner
+            android:id="@+id/templateSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- MOOD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/mood1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😊"
+                android:textSize="30sp"
+                android:padding="12dp"/>
+
+            <TextView
+                android:id="@+id/mood2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❤️"
+                android:textSize="30sp"
+                android:padding="12dp" />
+
+
+            <TextView
+                android:id="@+id/mood3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌿"
+                android:textSize="30sp"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- 🌿 INPUT CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#55FFFFFF"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:elevation="8dp">
+
+            <EditText
+                android:id="@+id/input"
+                android:hint="Write something you're grateful for..."
+                android:textColor="#000000"
+                android:textColorHint="#777777"
+                android:background="@android:color/transparent"
+                android:minHeight="120dp"
+                android:gravity="top"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/saveBtn"
+            android:text="Save Gratitude"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+        <!-- SUBTITLE -->
+        <TextView
+            android:text="Your Gratitude 💫"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- LIST -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/entryContainer"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
