@@ -30,7 +30,8 @@ The MindPeace application is designed as a modular Android application that help
 1. App Launch Flow
 When the user opens the application, the first screen displays the app name along with developer and guide details. The user then navigates to the About screen, which provides a brief introduction to the app. After this, the user proceeds to the Sign-Up/Login screen for authentication. Once logged in successfully, the user is directed to the main dashboard.
 <img width="358" height="652" alt="Screenshot 2026-05-23 154318" src="https://github.com/user-attachments/assets/97e01a3a-0d4c-46d7-acb5-1e9c94c4acd3" />
-<img width="316" height="557" alt="Screenshot 2026-05-23 154327" src="https://github.com/user-attachments/assets/02930720-5c1b-4076-89dc-6bcb2142154e" />
+<img width="273" height="487" alt="Screenshot 2026-05-23 154053" src="https://github.com/user-attachments/assets/8e8c5ef0-92e1-48d5-87f5-c10ddd69a90b" />
+
 
 2. Dashboard (Central Control Panel)
 The dashboard acts as the central hub of the application. It contains multiple feature cards such as Guided Meditation, Mood Journal, Gratitude Journal, Breathing Exercise, Sound Mixer, PTSD Toolkit, Reminder System, Mind Calculator, and Camera. Each card navigates to its respective module when clicked.
