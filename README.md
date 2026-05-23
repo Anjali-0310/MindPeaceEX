@@ -1,4 +1,3 @@
-<img width="358" height="652" alt="Screenshot 2026-05-23 154318" src="https://github.com/user-attachments/assets/f15a468b-aafe-45c9-b889-0449e41a0ad9" />1. Abstract of the App
 MindPeace is an Android-based mental wellness application designed to help users manage stress, anxiety, and emotional imbalance through simple, accessible tools. The app integrates features such as guided meditation, calming soundscapes, mood tracking, gratitude journaling, PTSD support tools, and reminders. It provides a user-friendly interface with an aesthetically pleasing design to create a calming digital environment. The application does not diagnose mental health conditions but offers supportive techniques to promote relaxation, self-awareness, and emotional well-being.
 
 2. Purpose of the App
